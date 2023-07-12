@@ -1,0 +1,164 @@
+G Vachaspathi@Vachi MINGW64 ~
+$ cd f:
+
+G Vachaspathi@Vachi MINGW64 /f
+$ cd GiBash/
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (dashboard|MERGING)
+$ git branch main
+fatal: a branch named 'main' already exists
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (dashboard|MERGING)
+$ git checkout main
+FETCH_HEAD         HEAD               MERGE_HEAD         ORIG_HEAD          dashboard          hi                 main               origin/HEAD        origin/dashboard   origin/hi          origin/main
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (dashboard|MERGING)
+$ git checkout main
+Switched to branch 'main'
+A       blog.html
+A       contact.html
+Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (main)
+$ git pull
+Updating ee99a16..4179ace
+Fast-forward
+ blog.html    | 172 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ contact.html | 168 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 340 insertions(+)
+ create mode 100644 blog.html
+ create mode 100644 contact.html
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (main)
+$ git push
+Everything up-to-date
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (main)
+$ git fetch
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (main)
+$ git checkout -b Localwork
+Switched to a new branch 'Localwork'
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (Localwork)
+$ git merge main
+Already up to date.
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (Localwork)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (main)
+$ git merge Localwork
+Already up to date.
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (main)
+$ git add .
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (main)
+$ git push
+Everything up-to-date
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (main)
+$ git checkout l
+error: pathspec 'l' did not match any file(s) known to git
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (main)
+$ git checkout localwork
+Switched to branch 'localwork'
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (localwork)
+$ git pull origin main
+From https://github.com/vachaspathi6/GiBash
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (localwork)
+$ git fetch
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (localwork)
+$ notepad form.txt
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (localwork)
+$ git add .
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (localwork)
+$ git commit -m "added form.html"
+[localwork b03bc72] added form.html
+ 1 file changed, 282 insertions(+)
+ create mode 100644 form.txt
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (localwork)
+$ git push localwork
+fatal: 'localwork' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (localwork)
+$ git push origin localwork
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.17 KiB | 2.17 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'localwork' on GitHub by visiting:
+remote:      https://github.com/vachaspathi6/GiBash/pull/new/localwork
+remote:
+To https://github.com/vachaspathi6/GiBash.git
+ * [new branch]      localwork -> localwork
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (localwork)
+$ git merge main
+Already up to date.
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (localwork)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (main)
+$ git merge main
+Already up to date.
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (main)
+$ git merge localwork
+Updating 4179ace..b03bc72
+Fast-forward
+ form.txt | 282 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 282 insertions(+)
+ create mode 100644 form.txt
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (main)
+$ git checkout hi
+Switched to branch 'hi'
+Your branch is up to date with 'origin/hi'.
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (hi)
+$ git merge localwork
+Updating 560fd1a..b03bc72
+Fast-forward
+ about.html   | 142 ++++++++++++++++++++++++++++++
+ form.txt     | 282 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ service.html | 169 +++++++++++++++++++++++++++++++++++
+ theory.html  |  19 ++++
+ 4 files changed, 612 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 form.txt
+ create mode 100644 service.html
+ create mode 100644 theory.html
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (hi)
+$ git push origin hi
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/vachaspathi6/GiBash.git
+   560fd1a..b03bc72  hi -> hi
+
+G Vachaspathi@Vachi MINGW64 /f/GiBash (hi)
+$
